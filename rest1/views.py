@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib import messages
 from .models import Participante
 
-
+@csrf_exempt
 def home(request):
     if request.method == "POST":
         nome_recebido = request.POST.get('nome_usuario')
