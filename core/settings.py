@@ -19,6 +19,8 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+CSRF_TRUSTED_ORIGINS = ['https://web-production-5d87.up.railway.app/','https://*.127.0.0.1']
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -129,5 +131,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ACCOUNT_DEFAULT_HTTP_PROTOCOL= 'http'
 SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = False
 '''
+CSRF_COOKIE_SECURE = False
+
